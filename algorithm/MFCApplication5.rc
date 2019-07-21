@@ -1,0 +1,903 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\MFCApplication5.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""        // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MFCApplication5.ico"
+IDR_USVTYPE             ICON                    "res\\MFCApplication5Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+IDB_NAVIGATION_LARGE    BITMAP                  "res\\nav_large.bmp"
+IDB_NAVIGATION_LARGE_HC BITMAP                  "res\\nav_large_hc.bmp"
+IDB_PAGES               BITMAP                  "res\\pages.bmp"
+IDB_PAGES_HC            BITMAP                  "res\\pages_hc.bmp"
+IDB_PAGES_SMALL         BITMAP                  "res\\pages_small.bmp"
+IDB_PAGES_SMALL_HC      BITMAP                  "res\\pages_small_hc.bmp"
+IDB_INFO                BITMAP                  "res\\info.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "标题栏(&C)",                     ID_VIEW_CAPTION_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 MFCApplication5(&A)...",   ID_APP_ABOUT
+    END
+END
+
+IDR_USVTYPE MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "标题栏(&C)",                     ID_VIEW_CAPTION_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 MFCApplication5(&A)...",   ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_WINDOWS_MENU MENU
+BEGIN
+    MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "关于 MFCApplication5(&A)...",   ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MFCApplication5"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MFCApplication5，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_Set_start_goal_Position DIALOGEX 0, 0, 151, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置USV始末点位置及速度"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,110,50,14
+    PUSHBUTTON      "取消",IDCANCEL,82,110,50,14
+    LTEXT           "起点：",IDC_STATIC,15,36,25,8
+    EDITTEXT        IDC_StartX,46,34,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_StartY,92,34,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "X坐标",IDC_STATIC,46,17,40,8
+    CTEXT           "Y坐标",IDC_STATIC,92,17,40,8
+    LTEXT           "终点：",IDC_STATIC,15,61,25,8
+    EDITTEXT        IDC_GoalX,45,58,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_GoalY,92,58,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "USV 初始速度  (Kn)：",IDC_STATIC,15,84,73,8
+    EDITTEXT        IDC_GoalY2,92,81,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,7,7,137,97
+END
+
+IDD_SetStaticObstacleCircle DIALOGEX 0, 0, 241, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置静态障碍物（圆）"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_StaticObstacleX,34,124,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_StaticObstacleY,105,124,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_StaticObstacleR,189,124,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "添加障碍物",IDAddObstacleC,7,142,50,14
+    PUSHBUTTON      "删除障碍物",IDDeleteObstacleC,96,142,50,14
+    PUSHBUTTON      "确定",IDOK,185,142,50,14
+    PUSHBUTTON      "取消",IDCANCEL,185,162,50,14
+    CONTROL         "",IDC_LIST_StaticObstacle,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,6,7,230,110
+    RTEXT           "X坐标",-1,7,127,24,8
+    RTEXT           "Y坐标",-1,77,127,25,8
+    RTEXT           "最大宽度",-1,148,127,38,8
+    PUSHBUTTON      "导入数据",IDSObstacleCInput,7,162,50,14
+    PUSHBUTTON      "导出数据",IDSObstacleCOutput,96,162,50,14
+END
+
+IDD_SetPSO DIALOGEX 0, 0, 213, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "静态已知障碍物-粒子群算法参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,44,58,14
+    PUSHBUTTON      "取消",IDCANCEL,114,44,60,14
+    LTEXT           "迭代次数：",IDC_STATIC,7,8,41,8
+    EDITTEXT        IDC_PSOgenerations,45,7,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "粒  子  数：",IDC_STATIC,7,27,41,8
+    EDITTEXT        IDC_PSOparticle_num,45,25,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "设置速度最大次数：",IDC_STATIC,95,8,73,8
+    EDITTEXT        IDC_PSOsetV_numMAX,166,7,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "设置初始速度参数：",IDC_STATIC,95,27,74,8
+    EDITTEXT        IDC_PSOsetInitialV,165,25,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_SetStaticObstacleRectangle DIALOGEX 0, 0, 243, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置静态障碍物（方）"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_StaticObstacleCX,7,137,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_StaticObstacleCY,54,137,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_StaticObstacleHL,101,137,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_StaticObstacleHW,148,137,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_StaticObstacleDA,197,137,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加障碍物",IDAddObstacleR,7,157,50,14
+    PUSHBUTTON      "删除障碍物",IDDeleteObstacleR,96,157,50,14
+    PUSHBUTTON      "确定",IDOK,187,157,50,14
+    PUSHBUTTON      "取消",IDCANCEL,187,176,50,14
+    CONTROL         "",IDC_LIST_StaticObstacleaRectangle,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,230,110
+    CTEXT           "中心点X",-1,7,127,40,12
+    PUSHBUTTON      "导入数据",IDSObstacleCInputR,7,176,50,14
+    PUSHBUTTON      "导出数据",IDSObstacleCOutputR,96,176,50,14
+    CTEXT           "中心点Y",-1,54,127,40,12
+    CTEXT           "半长",-1,102,127,40,12
+    CTEXT           "半宽",-1,150,127,40,12
+    CTEXT           "方向角",-1,197,127,40,12
+END
+
+IDD_SetViewSize DIALOGEX 0, 0, 165, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "改变窗口大小"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,22,65,50,14
+    PUSHBUTTON      "取消",IDCANCEL,90,65,50,14
+    LTEXT           "宽：",IDC_STATIC,16,40,17,8
+    EDITTEXT        IDC_SetViewLength,34,39,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "高：",IDC_STATIC,90,40,17,8
+    EDITTEXT        IDC_SetViewWidth,107,39,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "是否可拖动改变",IDC_Change,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,16,72,10
+    GROUPBOX        "",IDC_STATIC,7,4,151,54
+END
+
+IDD_SetDynamicOC DIALOGEX 0, 0, 245, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置动态障碍物（圆）"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_DynamicOC_X,7,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOC_Y,54,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOC_R,101,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOC_DA,148,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOC_V,199,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "添加障碍物",IDAddDynamicOC,7,157,50,14
+    PUSHBUTTON      "删除障碍物",IDDeleteDynamicOC,96,157,50,14
+    PUSHBUTTON      "确定",IDOK,189,157,50,14
+    PUSHBUTTON      "取消",IDCANCEL,189,178,50,14
+    CONTROL         "",IDC_LIST_DynamicOC,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,232,110
+    CTEXT           "X坐标",-1,7,127,40,12
+    PUSHBUTTON      "导入数据",IDSDynamicOCIutput,7,178,50,14
+    PUSHBUTTON      "导出数据",IDSDynamicOCOutputC,96,178,50,14
+    CTEXT           "Y坐标",-1,54,127,40,12
+    CTEXT           "最大宽度",-1,102,127,40,12
+    CTEXT           "运动方向",-1,150,127,40,12
+    CTEXT           "运动速度",-1,199,127,40,12
+END
+
+IDD_SetDynamicOR DIALOGEX 0, 0, 295, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置动态障碍物（方）"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_DynamicOR_X,7,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOR_Y,54,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOR_HL,101,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOR_HW,148,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOR_DA,198,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DynamicOR_V,246,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "添加障碍物",IDAddDynamicOR,7,159,45,14
+    PUSHBUTTON      "确定",IDOK,195,159,45,14
+    PUSHBUTTON      "删除障碍物",IDDeleteDynamicOR,54,159,45,14
+    PUSHBUTTON      "取消",IDCANCEL,242,159,45,14
+    PUSHBUTTON      "导入数据",IDSDynamicORInput,101,159,45,14
+    PUSHBUTTON      "导出数据",IDSDynamicOROutput,148,159,45,14
+    CONTROL         "",IDC_LIST_DynamicOR,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,281,110
+    CTEXT           "中心点X",-1,7,127,40,12
+    CTEXT           "中心点Y",-1,54,127,40,12
+    CTEXT           "半长",-1,102,127,40,12
+    CTEXT           "半宽",-1,150,127,40,12
+    CTEXT           "方向角",-1,198,126,40,12
+    CTEXT           "速度(Kn)",-1,246,126,40,12
+END
+
+IDD_SetDoPSO DIALOGEX 0, 0, 213, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "动态已知障碍物-粒子群算法参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,76,58,14
+    PUSHBUTTON      "取消",IDCANCEL,114,76,60,14
+    LTEXT           "迭代次数：",IDC_STATIC,7,32,41,8
+    EDITTEXT        IDC_PSOgenerationsDO,45,31,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "粒  子  数：",IDC_STATIC,7,51,41,8
+    EDITTEXT        IDC_PSOparticle_numDO,45,49,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "航速改变权重：",IDC_STATIC,103,32,57,8
+    EDITTEXT        IDC_PSOchangeV,158,31,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "航向改变权重：",IDC_STATIC,103,51,74,8
+    EDITTEXT        IDC_PSOchangeDa,157,49,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "是否可设置改变权重",IDC_PSOchangeDO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,16,88,10
+    GROUPBOX        "",IDC_STATIC,96,7,110,61
+    LTEXT           "粒子群参数设置",IDC_STATIC,7,16,57,8
+END
+
+IDD_SetUnknownOC DIALOGEX 0, 0, 245, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置未知障碍物（圆）"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_UnknownOC_X,8,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UnknownOC_Y,54,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Unknown_R,101,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Unknown_DA,148,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Unknown_V,199,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "添加障碍物",IDAddUnknownOC,7,157,50,14
+    PUSHBUTTON      "删除障碍物",IDDeleteUnknownOC,96,157,50,14
+    PUSHBUTTON      "确定",IDOK,189,157,50,14
+    PUSHBUTTON      "取消",IDCANCEL,189,178,50,14
+    CONTROL         "",IDC_LIST_UnknownOC,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,232,110
+    CTEXT           "X坐标",-1,7,127,40,12
+    PUSHBUTTON      "导入数据",IDSUnknownOCIutput,7,178,50,14
+    PUSHBUTTON      "导出数据",IDSUnknownOCOutput,96,178,50,14
+    CTEXT           "Y坐标",-1,54,127,40,12
+    CTEXT           "最大宽度",-1,102,127,40,12
+    CTEXT           "运动方向",-1,148,127,40,12
+    CTEXT           "运动速度",-1,199,127,40,12
+END
+
+IDD_SetUnknownOR DIALOGEX 0, 0, 295, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置未知障碍物（方）"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_UnknownOR_X,7,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UnknownOR_Y,54,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UnknownOR_HL,101,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UnknownOR_HW,148,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UnknownOR_DA,198,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UnknownOR_V,246,137,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "添加障碍物",IDAddUnknownOR,7,159,45,14
+    PUSHBUTTON      "确定",IDOK,195,159,45,14
+    PUSHBUTTON      "删除障碍物",IDDeleteUnknownOR,54,159,45,14
+    PUSHBUTTON      "取消",IDCANCEL,242,159,45,14
+    PUSHBUTTON      "导入数据",IDSUnknownORInput,101,159,45,14
+    PUSHBUTTON      "导出数据",IDSUnknownOROutput,148,159,45,14
+    CONTROL         "",IDC_LIST_UnknownOR,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,281,110
+    CTEXT           "中心点X",-1,7,127,40,12
+    CTEXT           "中心点Y",-1,54,127,40,12
+    CTEXT           "半长",-1,102,127,40,12
+    CTEXT           "半宽",-1,150,127,40,12
+    CTEXT           "方向角",-1,198,126,40,12
+    CTEXT           "速度(Kn)",-1,246,126,40,12
+END
+
+IDD_Set_Unknown DIALOGEX 0, 0, 145, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "未知局部危险避障参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,14,74,50,14
+    PUSHBUTTON      "取消",IDCANCEL,81,74,50,14
+    LTEXT           "视野半径(m)：",-1,26,22,52,8
+    EDITTEXT        IDC_UnknownR,79,20,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "避障间隔(s)：",-1,26,47,50,8
+    EDITTEXT        IDC_UnknownL,78,44,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",-1,14,7,117,60
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "WHUT-DKJ"
+            VALUE "FileDescription", "Local risk obstacle avoidance algorithm of USV"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "USV.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "USV.exe"
+            VALUE "ProductName", "Local risk obstacle avoidance algorithm of USV"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_Set_start_goal_Position, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_SetStaticObstacleCircle, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_SetPSO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_SetStaticObstacleRectangle, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_SetViewSize, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_SetDynamicOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_SetDynamicOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_SetDoPSO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SetUnknownOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_SetUnknownOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_Set_Unknown, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Ribbon
+//
+
+IDR_RIBBON              RT_RIBBON_XML           "res\\ribbon.mfcribbon-ms"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\windows.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_googleicon          PNG                     "res\\googleicon.png"
+IDB_googleiconSmall     PNG                     "res\\googleiconSmall.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "USV"
+    IDR_USVTYPE             "\nUSV\nUSV\nMFCApplication5 Files (*.USV)\n.USV\nUSV.Document\nUSV.Document"
+    ID_WINDOW_MANAGER       "窗口(&W)..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MFCApplication5"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以不重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以不重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_CAPTION_BAR     "显示或隐藏标题栏\n切换标题栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "Local risk obstacle avoidance algorithm of USV"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MYCALENDARS         "我的日历"
+    IDS_CALENDAR            "日历"
+    IDS_SHORTCUTS           "快捷方式"
+    IDS_FOLDERS             "文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OUTLOOKBAR          "Outlook 栏"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CAPTION_BUTTON      "选项..."
+    IDS_CAPTION_BUTTON_TIP  "单击此处查看其他选项"
+    IDS_CAPTION_TEXT        "这是标题栏，可在其中向用户显示消息。"
+    IDS_CAPTION_IMAGE_TIP   "重要事项"
+    IDS_CAPTION_IMAGE_TEXT  "这是向用户显示的信息性消息。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\MFCApplication5.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#include "l.CHS\afxprint.rc"    // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"        // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
